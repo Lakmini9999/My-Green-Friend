@@ -41,16 +41,43 @@
 
     <!-- Custom scripts -->
     <script src="js/agency.min.js"></script>
+    <script src="./js/myScript.js"></script>
 
+    <!--image on title-->
     <link rel="shortcut icon" href="./img/hnet.com-image.ico"/>
+
+    <!--sound-->
+    <audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
+
+    <!--j query-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
 
 <body id="page-top">
 
+<script type="text/javascript">
+
+
+<!-->
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#carouselExampleIndicators').offset().top
+    }, 'slow');
+
+     $("#carouselExampleIndicators").on('slide.bs.carousel', function () {
+    alert('The carousel has finished sliding from one item to another!');
+    playHadouken();
+  });
+
+}); -->
+
+</script>
+
 <!-- Navigation for first navbar-->
-<nav class="navbar navbar-expand-lg navbar-inverse fixed-top" id="mainNav"
-     style="background-color: rgba(202,255,122,1)">
+<nav class="navbar navbar-expand-lg navbar-inverse fixed-top" id="mainNav" style="background-color: rgba(202,255,122,1)">
     <div class="container" style="margin-left: 0px;margin-right: 0px;">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Welcome To My Green Friend !!!</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -78,7 +105,7 @@
                                           style="float: right;padding-top: 4px;padding-left: 4px"></i>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#signIn">Sign In
+                            <a class="dropdown-item" href="#signInNew">Sign In
                                 <i class="fas fa-sign-in-alt"></i>
                             </a>
                             <a class="dropdown-item" href="#signUp">Sign Up
@@ -401,7 +428,7 @@
 
 <!--sign in-->
 
-<section class="page-section" id="signIn" style="margin-bottom: 0px;padding-bottom: 0px;height: 100vh;margin-top: 0px;padding-top: 0px">
+<section class="page-section" id="signInNew" style="margin-bottom: 0px;padding-bottom: 0px;height: 100vh;margin-top: 0px;padding-top: 0px">
     <div class="container" style="margin-bottom: 0px;padding-bottom: 0px;margin-top: 0px;padding-bottom: 0px;margin-left: 0px;padding-left: 0px">
         <div class="row " style="margin-bottom: 0px;padding-bottom: 0px;margin-top: 0px;padding-bottom: 0px">
             <img class="img-fluid bg-image d-none d-md-flex col-md-6 col-sm-12 col-lg-6 " style="height:100vh"
